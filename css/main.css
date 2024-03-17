@@ -1,0 +1,122 @@
+.main>h1{
+  font-size: 2rem;
+  font-weight:300;
+  text-align: center;
+  padding:2rem;
+}
+
+.packs>nav{
+  display: flex;
+  /* width:fit-content; */
+  justify-content: space-between;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  padding: 2em;
+  margin: 3em 4em 3em 4em;
+}
+
+.packs nav div >p{
+  font-size:1.5rem ;
+  color:hsl(0, 0%, 68%);
+}
+.packs nav div:nth-child(2) >span{
+  font-size: 2rem;
+  font-weight:200;
+
+}
+
+.learn-more{
+  color:hsl(145, 38%, 50%);
+  text-decoration: none;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+.learn-more:hover{
+  text-decoration: underline;
+}
+
+.box{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: hsl(215, 67%, 93%);
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  padding: 2rem;
+  margin:  3rem 20% 3rem 20%;
+}
+
+.box h1 >a{
+  color:hsl(145, 38%, 50%);
+  text-decoration: none;
+}
+.box h1 >a:hover{
+  text-decoration: underline;
+}
+.box>button{
+  color:hsl(0, 0%, 100%, 0.8);
+  background-color: hsl(145, 38%, 50%);
+  border: none;
+  font-weight:400 ;
+  width:10rem;
+  height: 2rem;
+  text-transform: uppercase;
+}
+
+.questions{
+  display: flex;
+  flex-direction: column;
+   margin:  3rem 20% 3rem 20%;
+}
+
+.questions>h2{
+  color:hsl(145, 38%, 50%);
+  align-self: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight:300;
+  padding:2rem;
+}
+
+.questions>div{
+  padding-bottom:1rem;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width:500px){
+  .main>h1{
+    font-size: 1rem;
+    font-weight:200;
+  }
+
+  .packs>nav{
+    width:fit-content;
+    padding: 1em;
+    margin: 0.5rem;
+  }
+  
+ .packs nav div:nth-child(2)>span{
+    font-size: 1rem; 
+  }
+
+  .box{
+    width:fit-content;
+    padding: 1rem;
+    margin:  2rem ;
+  }
+
+  .box>button{
+    font-weight:400 ;
+    width:7rem;
+    height: 2rem;
+  }
+  .questions>h2{
+    font-size: 1rem;
+    font-weight:200;
+    padding:1rem;
+  }
+
+  .questions>div{
+    font-size: 1rem;
+  }
+}
